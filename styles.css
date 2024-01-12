@@ -1,0 +1,101 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.no-btn {
+  opacity: 0.5;
+}
+
+.no-btn:hover, .shake-on-hover:hover {
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
+.no-btn.clicked {
+  animation: shakeOnClick 0.5s;
+}
+
+@keyframes shakeOnClick {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+/* Existing styles... */
+
+.no-btn.shake-on-click {
+  animation: shakeOnClick 0.5s;
+}
+
+@keyframes shakeOnClick {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
+/* Existing styles... */
+
+.initial-gif, .additional-gif {
+  max-width: 100%; /* Adjust the maximum width as needed */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Center the GIF horizontally */
+}
+
+/* Existing styles... */
+
+/* Existing styles... */
+
+/* Existing styles... */
+
+/* Existing styles... */
+
